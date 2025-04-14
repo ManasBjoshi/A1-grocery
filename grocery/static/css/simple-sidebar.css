@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #080801;
+}
+
+/* Sidebar Wrapper */
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 15rem;
+  background: #1c1c1c;  /* Dark background */
+  color: #ffffff;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.4);
+  margin-left: -15rem;
+  transition: all 0.3s ease-in-out;
+  border-right: 2px solid #333;
+}
+
+/* Sidebar Heading */
+#sidebar-wrapper .sidebar-heading {
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #272727;
+  color: #d1d2d1;
+  border-bottom: 2px solid #00adb5;
+}
+
+/* Sidebar Links */
+#sidebar-wrapper .list-group {
+  width: 100%;
+}
+
+#sidebar-wrapper .list-group-item {
+  background: transparent;
+  color: #13462a;
+  border: none;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+#sidebar-wrapper .list-group-item:hover {
+  background: #1a3e26;
+  color: #121212;
+  transform: scale(1.05);
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Sidebar Toggle */
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+/* Page Content */
+#page-content-wrapper {
+  min-width: 100vw;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Buttons */
+.btn-custom {
+  background: #00adb5;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background: #007e86;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Responsive Sidebar */
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
