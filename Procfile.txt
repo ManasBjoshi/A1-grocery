@@ -1,1 +1,1 @@
-web: gunicorn ecommerce.github.io.wsgi
+web: gunicorn A1_grocery.wsgi
